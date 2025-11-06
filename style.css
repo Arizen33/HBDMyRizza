@@ -1,21 +1,27 @@
 html, body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
-  height: 100%; /* Make sure the body takes full height */
-  margin: 0;    /* Remove default margins */
+  height: 100%; 
+  margin: 0;   
+
+    /* Background image settings */
+  background-image: url('poging-pic.jpg'); /* replace with your image path */
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
-  height: 100vh;           /* Full viewport height */
+  justify-content: center;
+  align-items: center;  
+  height: 100vh;    
 }
 
 .main-container h2 {
-  margin: 0; /* Optional: remove default spacing */
+  margin: 0; 
 }
 
 .main-container p {
-  margin: 0; /* Optional: remove default spacing */
+  margin: 0; 
 }
