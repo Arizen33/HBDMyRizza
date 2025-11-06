@@ -25,6 +25,7 @@
         const opaqueElements = document.querySelectorAll('.opaque');
         const confettiContainer = document.querySelector('.confetti');
         const audioHBD = document.getElementById('audioHBD');
+        const container = document.querySelector('.container');
         const btnTrigger = document.getElementById('btnTrigger');
         const bdMessage = document.getElementById('birthdayMessage');
         
@@ -35,7 +36,9 @@
                 opaqueElements.forEach(item => {
                     item.style.opacity = "1";
                 });
+                container.style.opacity = "0";
                 btnTrigger.style.opacity = "0";
+                btnTrigger.disabled = true;
                 audioHBD.play();
             });
         });
