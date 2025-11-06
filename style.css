@@ -47,6 +47,10 @@ body {
     height: 100vh;
 }
 
+center {
+    opacity: 0;
+}
+
 .confetti {
   position: absolute;
   top: 0;
@@ -89,6 +93,14 @@ body {
   animation: fall 3s infinite linear;
 }
 
+.fade-in {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 3s ease-in-out;
+}
+
 @keyframes fall {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -96,6 +108,24 @@ body {
   100% {
     transform: translateY(100vh) rotate(360deg);
   }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @media (max-width:1023px) {
