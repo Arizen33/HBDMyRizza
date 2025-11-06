@@ -8,12 +8,7 @@
 </head>
 <body>
     <main>
-        <div class="confetti">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <div class="confetti"></div>
         <center>
             <h1>Happy Birthday, Rizza!</h1>
             <audio id="audioHBD" src="happy-birthday.mp3"></audio>
@@ -37,7 +32,7 @@
             });
             
             function createConfetti() {
-                for (let i = 0; i < 50; i++) {
+                for (let i = 0; i < 30; i++) {
                     const confettiPiece = document.createElement('span');
                     confettiPiece.style.backgroundColor = getRandomColor();
                     confettiPiece.style.left = `${Math.random() * 100}%`;
