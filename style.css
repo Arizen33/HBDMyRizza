@@ -103,7 +103,7 @@ main {
   width: 5px;
   height: 20px;
   background-color: #ff6347; /* Tomato color */
-  animation: fall 2.5s infinite linear;
+  animation: fall 3.5s infinite linear;
   transform-origin: center;
   z-index: 100;
 }
@@ -117,7 +117,7 @@ main {
 .confetti::after {
   background-color: #4caf50;
   left: 40%;
-  animation-delay: 0.4s;
+  animation-delay: 0.7s;
 }
 
 .confetti span {
@@ -126,7 +126,7 @@ main {
   width: 5px;
   height: 20px;
   background-color: randomColor();
-  animation: fall 3s infinite linear;
+  animation: fall 3.2s infinite linear;
   opacity: inherit;
 }
 
