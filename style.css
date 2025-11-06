@@ -51,6 +51,13 @@ main {
     align-items: center;
 }
 
+.container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .opaque {
     opacity: 0;
 }
@@ -95,6 +102,7 @@ main {
   height: 20px;
   background-color: randomColor();
   animation: fall 3s infinite linear;
+  opacity: inherit;
 }
 
 @keyframes fall {
