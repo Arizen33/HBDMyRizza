@@ -26,9 +26,12 @@
         const centerContainer = document.querySelector('center');
         
         document.addEventListener("DOMContentLoaded", function () {
+            confettiContainer.style.opacity = "0";
+            
             btnTrigger.addEventListener('click', function() {
                 setInterval(createConfetti, 1100);
                 setInterval(changeFontColor, 600);
+                confettiContainer.style.opacity = "1";
                 centerContainer.style.opacity = "1";
                 btnTrigger.style.opacity = "0";
                 audioHBD.play();
