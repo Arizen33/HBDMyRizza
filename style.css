@@ -50,6 +50,12 @@ main {
     align-items: center;
 }
 
+#birthdayMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     position: absolute;
     top: 0;
