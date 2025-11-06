@@ -30,7 +30,7 @@ button {
     padding: 15px;
     background-image: url("bday-tag.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% auto;
     background-position: center;
     border: none;
     border-radius: 5px;
