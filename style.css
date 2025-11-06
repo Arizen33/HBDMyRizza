@@ -26,13 +26,11 @@ p {
     padding: 20px;
 }
 
-p .me {
-    font-family: 'Cookie', cursive;
-    font-size: 3rem;
-    padding: 20px;
-    float: start;
-    text-align: start;
-}
+    p .me {
+        font-size: 3rem;
+        float: left;
+        text-align: start;
+    }
 
 button {
     padding: 15px;
