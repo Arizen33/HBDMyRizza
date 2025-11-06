@@ -26,6 +26,13 @@ p {
     padding: 20px;
 }
 
+small {
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    padding: 20px;
+    float: start;
+}
+
 button {
     padding: 15px;
     background-image: url("bday-tag.jpg");
