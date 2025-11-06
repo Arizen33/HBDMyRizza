@@ -28,7 +28,6 @@
     <script language="Javascript" type="text/javascript">
         window.addEventListener('load', () => {
             const confettiContainer = document.querySelector('.confetti');
-            const btnTrigger = document.getElementById('btnTrigger');
 
             function createConfetti() {
                 for (let i = 0; i < 50; i++) {
@@ -54,6 +53,10 @@
 
             setInterval(createConfetti, 1000);
             setInterval(changeFontColor, 600);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const btnTrigger = document.getElementById('btnTrigger');
             btnTrigger.click();
         });
     </script>
