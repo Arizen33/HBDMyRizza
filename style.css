@@ -60,6 +60,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url("gift.png");
 }
 
 .opaque {
