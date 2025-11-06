@@ -17,11 +17,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 7rem;
+    padding: 20px;
 }
 
 p {
     font-family: 'Cookie', cursive;
     font-size: 5rem;
+    padding: 20px;
 }
 
 button {
