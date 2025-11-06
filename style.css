@@ -28,12 +28,16 @@ p {
 
 button {
     padding: 15px;
-    background-color: transparent;
+    background-image: url("bday-tag.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     border-width: 0;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: 600;
-    color: white;
+    color: black;
 }
 
 body {
