@@ -20,18 +20,19 @@
         </center>
     </main>
     <script language="Javascript" type="text/javascript">
+        const confettiContainer = document.querySelector('.confetti');
+        const audioHBD = document.getElementById('audioHBD');
+        const btnTrigger = document.getElementById('btnTrigger');
+        
         document.addEventListener("DOMContentLoaded", function () {
-            const confettiContainer = document.querySelector('.confetti');
-            const audioHBD = document.getElementById('audioHBD');
-            const btnTrigger = document.getElementById('btnTrigger');
-
             btnTrigger.addEventListener('click', function() {
                 setInterval(createConfetti, 1100);
                 setInterval(changeFontColor, 600);
                 audioHBD.play();
             });
-            
-            function createConfetti() {
+        });
+
+        function createConfetti() {
                 for (let i = 0; i < 20; i++) {
                     const confettiPiece = document.createElement('span');
                     confettiPiece.style.backgroundColor = getRandomColor();
@@ -39,9 +40,8 @@
                     confettiPiece.style.top = `${Math.random() * 100}%`;
                     confettiContainer.appendChild(confettiPiece);
                 }
-            }
-        });
-
+        }
+        
         function getRandomColor() {
             const colors = ['#ff6347', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0'];
             return colors[Math.floor(Math.random() * colors.length)];
