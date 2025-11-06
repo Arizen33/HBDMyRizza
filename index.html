@@ -13,22 +13,29 @@
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
-            <span></span>
         </div>
         <center>
-            <button id="btnTrigger" onclick="document.getElementById('audioHBD').play()" hidden></button>
             <h1>Happy Birthday, Rizza!</h1>
             <audio id="audioHBD" src="happy-birthday.mp3"></audio>
             <br />
             <p>Wishing you a day filled with love, joy, and all your favorite things.</p>
             <p>May this year bring you happiness and success in all that you do!</p>
+            <br />
+            <button id="btnTrigger">Click Me!</button>
         </center>
     </main>
     <script language="Javascript" type="text/javascript">
-        window.addEventListener('load', () => {
+        document.addEventListener("DOMContentLoaded", function () {
             const confettiContainer = document.querySelector('.confetti');
+            const audioHBD = document.getElementById('audioHBD');
+            const btnTrigger = document.getElementById('btnTrigger');
 
+            btnTrigger.addEventListener('click', function() {
+                setInterval(createConfetti, 1100);
+                setInterval(changeFontColor, 600);
+                audioHBD.play();
+            });
+            
             function createConfetti() {
                 for (let i = 0; i < 50; i++) {
                     const confettiPiece = document.createElement('span');
@@ -38,27 +45,19 @@
                     confettiContainer.appendChild(confettiPiece);
                 }
             }
-
-            function getRandomColor() {
-                const colors = ['#ff6347', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0'];
-                return colors[Math.floor(Math.random() * colors.length)];
-            }
-
-            function changeFontColor() {
-                const hbd = document.querySelectorAll('h1');
-                hbd.forEach(item => {
-                    item.style.color = getRandomColor();
-                });
-            }
-
-            setInterval(createConfetti, 1000);
-            setInterval(changeFontColor, 600);
         });
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const btnTrigger = document.getElementById('btnTrigger');
-            btnTrigger.click();
-        });
+        function getRandomColor() {
+            const colors = ['#ff6347', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        function changeFontColor() {
+            const hbd = document.querySelectorAll('h1');
+            hbd.forEach(item => {
+                item.style.color = getRandomColor();
+            });
+        }
     </script>
 </body>
 </html>
