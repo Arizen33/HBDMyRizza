@@ -43,7 +43,15 @@
                 return colors[Math.floor(Math.random() * colors.length)];
             }
 
+            function changeFontColor() {
+                const hbd = document.querySelectorAll('h1');
+                hbd.forEach(item => {
+                    item.style.color = getRandomColor();
+                });
+            }
+
             setInterval(createConfetti, 1000);
+            setInterval(changeFontColor, 600);
         });
     </script>
 </body>
