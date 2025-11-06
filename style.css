@@ -62,7 +62,7 @@ main {
     text-align: center;
     background-image: url("gift.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200px;
     background-position: center;
     background-attachment: fixed;
 }
