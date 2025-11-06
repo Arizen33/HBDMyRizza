@@ -6,9 +6,9 @@ html, body {
 
     /* Background image settings */
   background-image: url('poging-pic.jpg'); /* replace with your image path */
-  background-size: cover;     
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 .main-container {
