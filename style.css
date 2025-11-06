@@ -5,13 +5,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Estonia';
-    src: url('estonia-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +27,7 @@ p {
 button {
     padding: 15px;
     background-color: #F48FB1;
+    border-width: 0;
     border-radius: 5px;
 }
 
@@ -67,7 +61,7 @@ center {
   width: 5px;
   height: 20px;
   background-color: #ff6347; /* Tomato color */
-  animation: fall 3s infinite linear;
+  animation: fall 2.5s infinite linear;
   transform-origin: center;
   z-index: 100;
 }
@@ -81,7 +75,7 @@ center {
 .confetti::after {
   background-color: #4caf50;
   left: 40%;
-  animation-delay: 0.2s;
+  animation-delay: 0.4s;
 }
 
 .confetti span {
@@ -89,16 +83,8 @@ center {
   top: -10px;
   width: 5px;
   height: 20px;
-  background-color: randomColor(); /* Random color function if using JS */
+  background-color: randomColor();
   animation: fall 3s infinite linear;
-}
-
-.fade-in {
-    animation: fadeIn 3s ease-in-out;
-}
-
-.fade-out {
-    animation: fadeOut 3s ease-in-out;
 }
 
 @keyframes fall {
@@ -108,24 +94,6 @@ center {
   100% {
     transform: translateY(100vh) rotate(360deg);
   }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 @media (max-width:1023px) {
