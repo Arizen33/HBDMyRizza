@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Happy Birthday Rizza My Loves Mwuah Mwuah Ugh</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="main-container">
-        <h1>happy birthday rizza mah loves</h1>
-        <p>ugh</p>
-    </div>
+    <main>
+        <div class="confetti">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <center>
+            <h1>Happy Birthday, Rizza!</h1>
+            <audio src="happy-birthday.mp3" loop autoplay></audio>
+            <br />
+            <p>Wishing you a day filled with love, joy, and all your favorite things.</p>
+            <p>May this year bring you happiness and success in all that you do!</p>
+        </center>
+    </main>
+    <script language="Javascript" type="text/javascript">
+        window.addEventListener('load', () => {
+            const confettiContainer = document.querySelector('.confetti');
+
+            function createConfetti() {
+                for (let i = 0; i < 50; i++) {
+                    const confettiPiece = document.createElement('span');
+                    confettiPiece.style.backgroundColor = getRandomColor();
+                    confettiPiece.style.left = `${Math.random() * 100}%`;
+                    confettiPiece.style.top = `${Math.random() * 100}%`;
+                    confettiContainer.appendChild(confettiPiece);
+                }
+            }
+
+            function getRandomColor() {
+                const colors = ['#ff6347', '#4caf50', '#2196f3', '#ffeb3b', '#9c27b0'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+
+            setInterval(createConfetti, 1000);
+        });
+    </script>
 </body>
-
-<script>
-</script>
-
-
 </html>
