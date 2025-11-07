@@ -29,7 +29,7 @@ p {
     p .me {
         font-size: 3rem;
         float: left;
-        text-align: start;
+        text-align: left;
     }
 
 button {
